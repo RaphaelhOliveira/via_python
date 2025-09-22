@@ -1,0 +1,16 @@
+print("=== CARRO EM ESTOQUE ===")
+
+cor = input("Cor: ")
+chassi = input("Chassi: ")
+ano_fabricacao = input("Ano de fabricação: ")
+preco_compra = input("Preço de compra: R$ ")
+preco_venda = input("Preço de venda: R$ ")
+status = input("Status: ")
+
+print("\n=== DADOS CADASTRADOS ===")
+print(f"Cor: {cor}")
+print(f"Chassi: {chassi}")
+print(f"Ano de fabricação: {ano_fabricacao}")
+print(f"Preço de compra: R$ {preco_compra}")
+print(f"Preço de venda: R$ {preco_venda}")
+print(f"Status: {status}")
