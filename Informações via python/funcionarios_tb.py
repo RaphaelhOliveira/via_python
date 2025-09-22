@@ -1,0 +1,18 @@
+print("=== FUNCIONÁRIO ===")
+
+nome = input("Nome: ")
+cpf = input("CPF: ")
+cargo = input("Cargo: ")
+telefone = input("Telefone: ")
+email = input("Email: ")
+salario = input("Salário: R$ ")
+data_admissao = input("Data de admissão (DD/MM/AAAA): ")
+
+print("\n=== DADOS FUNCIONÁRIO ===")
+print(f"Nome: {nome}")
+print(f"CPF: {cpf}")
+print(f"Cargo: {cargo}")
+print(f"Telefone: {telefone}")
+print(f"Email: {email}")
+print(f"Salário: R$ {salario}")
+print(f"Data de admissão: {data_admissao}")
