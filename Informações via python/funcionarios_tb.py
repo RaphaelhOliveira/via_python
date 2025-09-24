@@ -1,4 +1,10 @@
+funcionarios = []
+ultimo_id_funcionario = 0
+
 print("=== FUNCIONÁRIO ===")
+
+ultimo_id_funcionario += 1
+id_funcionario = ultimo_id_funcionario
 
 nome = input("Nome: ")
 
@@ -22,7 +28,19 @@ email = input("Email: ")
 salario = input("Salário: R$ ")
 data_admissao = input("Data de admissão (DD/MM/AAAA): ")
 
+funcionarios.append({
+    'id': id_funcionario,
+    'nome': nome,
+    'cpf': cpf,
+    'cargo': cargo,
+    'telefone': telefone,
+    'email': email,
+    'salario': salario,
+    'data_admissao': data_admissao
+})
+
 print("\n=== DADOS CADASTRADOS ===")
+print(f"ID: {id_funcionario}")
 print(f"Nome: {nome}")
 print(f"CPF: {cpf}")
 print(f"Cargo: {cargo}")
