@@ -1,4 +1,10 @@
+clientes = []
+ultimo_id_cliente = 0
+
 print("=== CADASTRO DE CLIENTE ===")
+
+ultimo_id_cliente += 1
+id_cliente = ultimo_id_cliente
 
 nome = input("Nome: ")
 
@@ -20,7 +26,18 @@ email = input("Email: ")
 endereco = input("Endereço: ")
 data_cadastro = input("Data de cadastro (DD/MM/AAAA): ")
 
+clientes.append({
+    'id': id_cliente,
+    'nome': nome,
+    'cpf': cpf,
+    'telefone': telefone,
+    'email': email,
+    'endereco': endereco,
+    'data_cadastro': data_cadastro
+})
+
 print("\n=== DADOS CADASTRADOS ===")
+print(f"ID: {id_cliente}")
 print(f"Nome: {nome}")
 print(f"CPF: {cpf}")
 print(f"Telefone: {telefone}")
