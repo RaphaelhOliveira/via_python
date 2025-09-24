@@ -1,10 +1,11 @@
 print("=== CADASTRO DE CLIENTE ===")
 
 nome = input("Nome: ")
-cpf = input("CPF: ")
+cpf = input("CPF: ").replace(".", "").replace("-", "")
 telefone = input("Telefone: ")
 email = input("Email: ")
 endereco = input("Endereço: ")
+data_cadastro = input("Data de cadastro (DD/MM/AAAA): ")
 
 print("\n=== DADOS CADASTRADOS ===")
 print(f"Nome: {nome}")
@@ -12,3 +13,4 @@ print(f"CPF: {cpf}")
 print(f"Telefone: {telefone}")
 print(f"Email: {email}")
 print(f"Endereço: {endereco}")
+print(f"Data de cadastro: {data_cadastro}")
