@@ -1,8 +1,21 @@
 print("=== CADASTRO DE CLIENTE ===")
 
 nome = input("Nome: ")
-cpf = input("CPF: ").replace(".", "").replace("-", "")
-telefone = input("Telefone: ")
+
+while True:
+    cpf = input("CPF: ").replace(".", "").replace("-", "").replace(" ", "")
+    if len(cpf) == 11 and cpf.isdigit():
+        break
+    else:
+        print("❌ CPF deve ter exatamente 11 dígitos numéricos. Tente novamente.")
+
+while True:
+    telefone = input("Telefone: ").replace("(", "").replace(")", "").replace("-", "").replace(" ", "")
+    if len(telefone) == 11 and telefone.isdigit():
+        break
+    else:
+        print("❌ Telefone deve ter exatamente 11 dígitos numéricos. Tente novamente.")
+
 email = input("Email: ")
 endereco = input("Endereço: ")
 data_cadastro = input("Data de cadastro (DD/MM/AAAA): ")
