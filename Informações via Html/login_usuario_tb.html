@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Usuário</title>
+    <link rel="stylesheet" href="login_usuario_tb.css">
+</head>
+<body>
+    <h1>Login Usuário</h1>
+    
+    <form>
+        <div class="form-group">
+            <label for="usuario">Usuário:</label>
+            <input type="text" id="usuario" name="usuario" placeholder="Digite o nome de usuário">
+        </div>
+
+        <div class="form-group">
+            <label for="senha">Senha:</label>
+            <input type="password" id="senha" name="senha" placeholder="Digite a senha">
+        </div>
+
+        <div class="form-group">
+            <label for="nivelAcesso">Nível de Acesso:</label>
+            <select id="nivelAcesso" name="nivelAcesso">
+                <option value="">Selecione o nível de acesso</option>
+                <option value="administrador">Administrador</option>
+                <option value="usuario">Usuário</option>
+                <option value="convidado">Convidado</option>
+                <option value="operador">Operador</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="ultimoLogin">Último Login:</label>
+            <input type="datetime-local" id="ultimoLogin" name="ultimoLogin">
+        </div>
+
+        <button type="submit">Entrar</button>
+    </form>
+</body>
+</html>
