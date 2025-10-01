@@ -1,56 +1,46 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadastro Cliente</title>
+    <title>Cadastro</title>
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    <div class="container">
-        <h1 class="titulo">Cadastro Cliente</h1>
-        
-        <form>
-            <div class="grupo-formulario">
-                <label class="rotulo" for="nome">Nome Completo</label>
-                <input type="text" id="nome" class="campo" required>
-            </div>
-            
-            <div class="grupo-formulario">
-                <label class="rotulo" for="cpf">CPF</label>
-                <input type="text" id="cpf" class="campo" 
-                       pattern="[0-9]{11}" 
-                       title="CPF deve conter exatamente 11 dígitos" 
-                       required>
-                <div class="info-campo">Digite apenas números (11 dígitos)</div>
-            </div>
-            
-            <div class="grupo-formulario">
-                <label class="rotulo" for="telefone">Telefone</label>
-                <input type="text" id="telefone" class="campo" 
-                       pattern="[0-9]{11}" 
-                       title="Telefone deve conter exatamente 11 dígitos" 
-                       required>
-                <div class="info-campo">Digite apenas números (11 dígitos)</div>
-            </div>
-            
-            <div class="grupo-formulario">
-                <label class="rotulo" for="email">E-mail</label>
-                <input type="email" id="email" class="campo" required>
-            </div>
-            
-            <div class="grupo-formulario">
-                <label class="rotulo" for="endereco">Endereço</label>
-                <input type="text" id="endereco" class="campo" required>
-            </div>
-            
-            <div class="grupo-formulario">
-                <label class="rotulo" for="data-cadastro">Data de Cadastro</label>
-                <input type="date" id="data-cadastro" class="campo" required>
-            </div>
-            
-            <button type="submit" class="botao">Cadastrar</button>
-        </form>
-    </div>
+    <h1>Cadastro de Cliente</h1>
+    
+    <form>
+        <div class="form-group">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome">
+        </div>
+
+        <div class="form-group">
+            <label for="cpf">CPF:</label>
+            <input type="text" id="cpf" name="cpf">
+        </div>
+
+        <div class="form-group">
+            <label for="telefone">Telefone:</label>
+            <input type="tel" id="telefone" name="telefone">
+        </div>
+
+        <div class="form-group">
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email">
+        </div>
+
+        <div class="form-group">
+            <label for="endereco">Endereço:</label>
+            <input type="text" id="endereco" name="endereco">
+        </div>
+
+        <div class="form-group">
+            <label for="dataCadastro">Data de Cadastro:</label>
+            <input type="date" id="dataCadastro" name="dataCadastro">
+        </div>
+
+        <button type="submit">Cadastrar</button>
+    </form>
 </body>
 </html>
