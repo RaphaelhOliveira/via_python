@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Modelos</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <h1>Cadastro de Modelos</h1>
+    
+    <form>
+        <div class="form-group">
+            <label for="nomeModelo">Nome do Modelo:</label>
+            <input type="text" id="nomeModelo" name="nomeModelo" placeholder="Digite o nome do modelo">
+        </div>
+
+        <div class="form-group">
+            <label for="anoLancamento">Ano de Lançamento:</label>
+            <input type="number" id="anoLancamento" name="anoLancamento" placeholder="Ex: 2024" min="1900" max="2030">
+        </div>
+
+        <div class="form-group">
+            <label for="categoria">Categoria:</label>
+            <select id="categoria" name="categoria">
+                <option value="">Selecione uma categoria</option>
+                <option value="economico">Econômico</option>
+                <option value="intermediario">Intermediário</option>
+                <option value="premium">Premium</option>
+                <option value="luxo">Luxo</option>
+                <option value="esportivo">Esportivo</option>
+            </select>
+        </div>
+
+        <button type="submit">Cadastrar Modelo</button>
+    </form>
+</body>
+</html>
