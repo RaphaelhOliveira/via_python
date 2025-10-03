@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Financiamento</title>
+    <link rel="stylesheet" href="financiamento_tb.css">
+</head>
+<body>
+    <h1>Financiamento</h1>
+    
+    <form>
+        <div class="form-group">
+            <label for="bancoParceiro">Banco Parceiro:</label>
+            <input type="text" id="bancoParceiro" name="bancoParceiro" placeholder="Digite o nome do banco">
+        </div>
+
+        <div class="form-group">
+            <label for="valorFinanciamento">Valor de Financiamento:</label>
+            <input type="number" id="valorFinanciamento" name="valorFinanciamento" placeholder="0,00" step="0.01" min="0">
+        </div>
+
+        <div class="form-group">
+            <label for="quantidadeParcelas">Quantidade de Parcelas:</label>
+            <input type="number" id="quantidadeParcelas" name="quantidadeParcelas" placeholder="Ex: 12" min="1" max="120">
+        </div>
+
+        <div class="form-group">
+            <label for="taxaJuros">Taxa de Juros (%):</label>
+            <input type="number" id="taxaJuros" name="taxaJuros" placeholder="0,00" step="0.01" min="0">
+        </div>
+
+        <button type="submit">Simular Financiamento</button>
+    </form>
+</body>
+</html>
